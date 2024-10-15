@@ -1,0 +1,28 @@
+.nav-container{
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    position: fixed;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: "#fffff";
+}
+.nav-container img{
+    height: 4rem;
+    width: 10%;
+    animation: rotate 3s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

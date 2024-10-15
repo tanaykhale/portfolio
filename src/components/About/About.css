@@ -1,0 +1,18 @@
+.mydetails{
+    text-align: justify;
+    text-align-last: center;
+    font-size: x-large;
+    
+}
+.image{
+    height: 30vh;
+    width: 20vw;
+    
+}
+.skill{
+    font-weight: 900;
+}
+.detail{
+    text-align: justify;
+    text-align-last: center;
+}
