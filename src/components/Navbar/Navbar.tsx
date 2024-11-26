@@ -115,13 +115,21 @@ const Navbar = ({ smoothScrollTo, checked, handleMode }: NavProp) => {
             onClick={() => smoothScrollTo("portfolio")}
             label="Portfolio"
           />
+          <StyledBreadcrumb
+            component="a"
+            onClick={() => smoothScrollTo("ThreeD")}
+            label="3D-Models"
+          />
         </Breadcrumbs>
       </Box>
       <Box
         sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
         <MaterialUISwitch sx={{ m: 1 }} onClick={handleMode} />
-        <Typography mr={1}> {checked ? "Dark Mode" : "Light Mode"}</Typography>
+        <Typography mr={1} id="mode">
+          {" "}
+          {checked ? "Dark Mode" : "Light Mode"}
+        </Typography>
         <Button variant="contained" onClick={() => smoothScrollTo("contact")}>
           Contact Me
         </Button>

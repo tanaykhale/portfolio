@@ -5,6 +5,7 @@ const Home = lazy(() => import("./components/Home/Home"));
 const AboutContent = lazy(() => import("./components/About/AboutContent"));
 const Portfolio = lazy(() => import("./components/Portfolio/Portfolio"));
 const Contact = lazy(() => import("./components/Contact/Contact"));
+const ThreeD = lazy(() => import("./components/ThreeD/ThreeD"));
 import theme from "./theme";
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Home checked={checked} smoothScrollTo={smoothScrollTo}></Home>
           <AboutContent></AboutContent>
           <Portfolio></Portfolio>
+          <ThreeD></ThreeD>
           <Contact></Contact>
         </ThemeProvider>
       </Suspense>
